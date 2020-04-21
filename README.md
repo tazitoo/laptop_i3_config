@@ -18,3 +18,10 @@ ranger
 
 Main font I use is Adobe's source code pro  
 Other fonts are useful for powerline (so get the patched font package)
+
+
+Installed packages:  
+`sudo dpkg-query -f '${binary:Package}\n' -W > packages_list.txt`  
+
+To reinstall:  
+`sudo xargs -a packages_list.txt apt install`  
